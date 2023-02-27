@@ -27,7 +27,7 @@
             outline: none;
             font-size: 15px;
         }
-        button {
+        #submit {
             background-color: dodgerblue;
             border: none;
             padding: 15px;
@@ -35,8 +35,10 @@
             border-radius: 10px;
             color: white;
             font-size: 15px;
+            
         }
-        button:hover {
+        #submit:hover
+        {
             background-color: deepskyblue;
             cursor: pointer;
         }
@@ -44,12 +46,14 @@
 </head>
 <body>
     <div>
+        <form action="cadastro.php" method="POST">
         <h1>Login</h1>
-        <input type="text" placeholder="none">
+        <input type="text" name="nome" id="nome" placeholder="Nome do produto">
         <br><br>
-        <input type="number" placeholder="Senha">
+        <input type="number" name="codigo" id="codigo" placeholder="Senha">
         <br><br>
-        <button>Enviar</button>
+        <input type="submit" name="submit" id="submit">
+        </form>
 
     </div>
 </body>
